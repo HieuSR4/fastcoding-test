@@ -320,8 +320,9 @@ nav .social-icons a {
 }
 
 .post-title {
-    font-size: 1.5em;
+    font-size: 1.0em;
     margin: 10px 0;
+    color: #0487d3;
 }
 
 .post-description {
