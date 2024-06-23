@@ -52,6 +52,13 @@ nav .social-icons a {
     color: #f1f3f7;
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
 .hero {
     background: url('../image/image1.jpg') no-repeat center center/cover;
     height: 100vh;
@@ -141,6 +148,14 @@ nav .social-icons a {
     text-align: center;
     width: 200px;
     z-index: 1;
+}
+
+.feature-card p{
+    /* border-radius: 10px;
+    padding: 20px; */
+    text-align: justify;
+    /* width: 200px;
+    z-index: 1; */
 }
 
 .icon-circle {
@@ -349,13 +364,28 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+    
     nav ul {
+        display: none;
         flex-direction: column;
-        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #333;
     }
 
     nav ul li {
         margin: 10px 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 20px;
     }
 
     .features h2 {
@@ -413,4 +443,9 @@ footer {
     .post {
         max-width: 100%;
     }
+}
+
+#nav-menu.show {
+    display: flex;
+    flex-direction: column;
 }
